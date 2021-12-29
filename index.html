@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/meditation.png">
+    <title id="title">Meditate Time Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="menu__list">
+            <img id="checklist" src="./img/checklist.png" class="list__img" alt="checklist-img">
+            <img src="./img/meditation.png" id="logoImg" class="list__img" alt="meditate-img">
+        </ul>
+    </nav>
+
+    <div class="meditate__timer">
+        <div class="timer" id="clock">
+            <p class="time" id="time">00:00:00</p>
+        </div>
+
+        <div class="button__section">
+            <button class="start" id="start">start</button>
+        </div>
+    </div>
+
+    <div class="todos__container">
+        <ul class="todos__list" id="todoList">
+
+            <h2 class="todo__category">30-minute morning routine <img src="./img/sun.png" class="category__img" alt="">
+            </h2>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Make my
+                bed</li>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Do
+                repetitions of my favourite exercise</li>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Meditate 10-15 minutes</li>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Reading
+                10-15 minutes</li>
+
+            <h2 class="todo__category">Wim Hof Technique<img src="./img/lungs.png" class="category__img" alt=""></h2>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Breathe Wim Hof Technique for 10 minutes</li>
+            <h2 class="todo__category">Frontend Career <img src="./img/programmer.png" class="category__img" alt="">
+            </h2>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Code
+                sth in VSC</li>
+            <h2 class="todo__category">Lean, toner & healthy <img src="./img/leaf.png" class="category__img" alt="">
+            </h2>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Relax
+                my mind and body</li>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Stay
+                Hydrated</li>
+            <li class="todo__task"><span class="todo__circle"><img class="todo__checkmark" src="./img/icon-check.svg"
+                        alt="check"></span>Exercise</li>
+
+
+        </ul>
+    </div>
+
+    <div class="todo__create" id="todoCreate">
+        <h2 class="create__title">Add New Todo</h2>
+        <input type="text" class="new__todo__title" id="newTodoTitle" placeholder="Type new todo title..."><br>
+        <input type="text" class="new__todo__task" id="newTodoTask" placeholder="Type new todo..."><br>
+        <button class="todo__add" id="addNewTodo">ADD TODO</button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
